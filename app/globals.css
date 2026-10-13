@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-fredoka: var(--font-fredoka);
+  --font-nunito: var(--font-nunito);
+
+  --color-parchment-50: #f4f1f1;
+  --color-parchment-100: #e8e3e3;
+  --color-parchment-200: #d2c6c6;
+  --color-parchment-300: #bbaaaa;
+  --color-parchment-400: #a48e8e;
+  --color-parchment-500: #8e7171;
+  --color-parchment-600: #715b5b;
+  --color-parchment-700: #554444;
+  --color-parchment-800: #392d2d;
+  --color-parchment-900: #1c1717;
+  --color-parchment-950: #141010;
+
+  --color-alice-blue-50: #edf2f8;
+  --color-alice-blue-100: #dbe4f0;
+  --color-alice-blue-200: #b6c9e2;
+  --color-alice-blue-300: #92aed3;
+  --color-alice-blue-400: #6d93c5;
+  --color-alice-blue-500: #4978b6;
+  --color-alice-blue-600: #3a6092;
+  --color-alice-blue-700: #2c486d;
+  --color-alice-blue-800: #1d3049;
+  --color-alice-blue-900: #0f1824;
+  --color-alice-blue-950: #0a111a;
+
+  --color-onyx-50: #f3f1f2;
+  --color-onyx-100: #e7e4e5;
+  --color-onyx-200: #d0c8cb;
+  --color-onyx-300: #b8adb1;
+  --color-onyx-400: #a09297;
+  --color-onyx-500: #88777d;
+  --color-onyx-600: #6d5f64;
+  --color-onyx-700: #52474b;
+  --color-onyx-800: #372f32;
+  --color-onyx-900: #1b1819;
+  --color-onyx-950: #131111;
+
+  --color-steel-blue-50: #eaf4fa;
+  --color-steel-blue-100: #d6e9f5;
+  --color-steel-blue-200: #add3eb;
+  --color-steel-blue-300: #84bde1;
+  --color-steel-blue-400: #5ba8d7;
+  --color-steel-blue-500: #3292cd;
+  --color-steel-blue-600: #2875a4;
+  --color-steel-blue-700: #1e577b;
+  --color-steel-blue-800: #143a52;
+  --color-steel-blue-900: #0a1d29;
+  --color-steel-blue-950: #07141d;
+
+  --color-rosy-copper-50: #faedea;
+  --color-rosy-copper-100: #f5dad6;
+  --color-rosy-copper-200: #ebb5ad;
+  --color-rosy-copper-300: #e19084;
+  --color-rosy-copper-400: #d76b5b;
+  --color-rosy-copper-500: #cd4632;
+  --color-rosy-copper-600: #a43828;
+  --color-rosy-copper-700: #7b2a1e;
+  --color-rosy-copper-800: #521c14;
+  --color-rosy-copper-900: #290e0a;
+  --color-rosy-copper-950: #1d0a07;
+
+  --color-banana-cream-50: #fefbe6;
+  --color-banana-cream-100: #fef7cd;
+  --color-banana-cream-200: #fcf09c;
+  --color-banana-cream-300: #fbe86a;
+  --color-banana-cream-400: #fae038;
+  --color-banana-cream-500: #f9d806;
+  --color-banana-cream-600: #c7ad05;
+  --color-banana-cream-700: #958204;
+  --color-banana-cream-800: #635703;
+  --color-banana-cream-900: #322b01;
+  --color-banana-cream-950: #231e01;
+
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background);
+  color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/grain.gif') repeat;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 9999;
 }
