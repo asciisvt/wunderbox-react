@@ -1,6 +1,6 @@
-import MainNavBar from "../components/MainNavBar";
-import Hero from "../components/app/Hero";
-import FeaturedProject from "../components/app/FeaturedProject";
+import MainNavBar from "../components/navigation/MainNavBar";
+import Hero from "./components/Hero";
+import FeaturedProject from "./components/FeaturedProject";
 
 export default function Home() {
   return (
