@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <MainNavBar />
       <Hero />
+      <hr className="border-onyx-900"></hr>
       <FeaturedProject />
     </div>
   );

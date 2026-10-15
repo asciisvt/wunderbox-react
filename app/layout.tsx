@@ -25,7 +25,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-parchment-100 text-onyx-950">
         {children}
-        <footer className="flex flex-row justify-between px-8 py-4 bg-parchment-100 border-t border-rosy-copper-500 text-rosy-copper-500">
+        <footer className="flex flex-row justify-between px-8 py-4 bg-parchment-100 border-t border-onyx-900 text-rosy-copper-500">
           <p className="font-fredoka font-medium">wunderbox.games</p>
           <p className="font-nunito font-semibold">&copy; 2024 Wunderbox</p>
         </footer>
