@@ -6,15 +6,17 @@ export default function FeaturedProject() {
             <div className="flex-1">
                 <img src="images/bombvest-concept.png" alt="Bombvest Preview" className="w-full h-full object-cover rounded-lg border-onyx-900 border shadow-[3px_3px_0_var(--color-onyx-900)]" />
             </div>
-            <div className="flex-1 flex flex-col items-start justify-around font-nunito">
+            <div className="flex-1 flex flex-col items-start justify-around font-nunito py-2">
                 <div>
-                    <p>wunderbox.games presents...</p>
+                    <p className="italic text-sm">wunderbox.games presents...</p>
                     <h2 className="text-6xl font-extrabold ">BOMBVEST</h2>
 
                     <p className="mt-4 text-lg font-bold italic">PERFORM, SURVIVE, REPAY YOUR DEBTS!</p>
                     <p className="text-lg">Strap a bomb to your chest and enter the arena. Complete challenges, scavenge for supplies,
                         and decide how far you're willing to stray from the beaten path before the clock runs out.
-                        The audience is watching. The host is waiting. Put on a good show, and break a leg.</p>
+                    </p>
+                    <br />
+                    <p className="text-lg italic"> The audience is watching. The host is waiting. Put on a good show, and break a leg.</p>
                 </div>
                 <div>
                     <CallToAction href="/featured-project" text="learn more" buttonColor="bg-rosy-copper-500"

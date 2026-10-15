@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <div className="w-full h-[calc(100vh-5rem)] flex flex-row gap-10 items-center">
             <div className="flex-1 text-center text-onyx-900 flex flex-col items-end font-nunito">
-                <div className="text-right">
+                <div className="text-right w-full">
                     <h1 className="text-6xl font-fredoka font-semibold">
                         <span className="inline-block bg-steel-blue-500 text-parchment-100 px-6 py-2 w-[60%]">games,</span>
                         <br />
@@ -25,9 +25,26 @@ export default function Hero() {
                     </svg>
                     } />
             </div>
-            <div className="flex-1/4 h-full bg-rosy-copper-500 border-l border-onyx-900">
-                <div>
-
+            <div id="hero-grid" className="flex-1/4 h-full grid grid-cols-3 gap-4 bg-rosy-copper-500 border-l border-onyx-900 p-12 overflow-hidden">
+                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
+                </div>
+                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
+                </div>
+                <div className="bg-parchment-100 rounded-lg border col-span-2 border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
+                </div>
+                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
+                </div>
+                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
+                </div>
+                <div className="flex flex-col align-middle justify-center">
+                </div>
+                <div className="flex flex-col align-middle justify-center origin-right scale-[2]">
+                    <h2 className="text-5xl font-medium font-fredoka text-banana-cream-500 origin-center">
+                        wunderbox.
+                    </h2>
+                    <h2 className="text-5xl font-medium font-fredoka text-banana-cream-500 origin-center">
+                        games.
+                    </h2>
                 </div>
             </div>
             {/* <a href="#featured-project" className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-rosy-copper-500">
