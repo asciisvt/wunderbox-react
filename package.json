@@ -10,20 +10,23 @@
     "format": "biome format --write"
   },
   "dependencies": {
-    "grey-matter": "^0.0.0",
+    "animejs": "^4.5.0",
+    "gray-matter": "^4.0.3",
     "markdown-it": "^15.0.3",
-    "motion": "^14.1.0",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.2",
+    "@iconify-icon/react": "^3.0.5",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "tailwindcss": "^4",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5"
   }
 }
