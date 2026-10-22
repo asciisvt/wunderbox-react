@@ -7,6 +7,4 @@ featured: false
 image: "/images/bombvest-concept.png"
 ---
 
-# Test Post
-
 This is a test post for the wunderbox.games blog.

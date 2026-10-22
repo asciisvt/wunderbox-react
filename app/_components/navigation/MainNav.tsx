@@ -35,11 +35,11 @@ export default function MainNav() {
 
   useEffect(() => {
     scope.current = createScope({ root }).add((self) => {
-      animate(".nav-item", {
-        translateY: -10,
-        duration: 300,
-        easing: "outQuad",
-      });
+      // animate(".nav-item", {
+      //   translateY: -10,
+      //   duration: 300,
+      //   easing: "outQuad",
+      // });
     });
 
     // destroy the animation scope on unmount

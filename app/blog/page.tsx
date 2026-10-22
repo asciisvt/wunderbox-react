@@ -1,9 +1,20 @@
 import MainNav from "../_components/navigation/MainNav";
 import { getPostSlugs, getPostBySlug } from "../../lib/BlogTools";
 
+function PostList({ slugs }: { slugs: string[] | NonSharedBuffer[] }) {
+  return (
+    <ul>
+      {slugs.map((slug) => (
+        <li key={slug.toString()}>
+          <a href={`/blog/${slug.toString()}`}>{slug.toString()}</a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function Blog() {
   const slugs = getPostSlugs();
-  const posts = slugs.map((slug) => getPostBySlug(slug));
 
   return (
     <div>
@@ -14,14 +25,7 @@ export default function Blog() {
         </h1>
       </header>
       <main>
-        <div className="bg-parchment-100 m-8 rounded-2xl px-2 py-4">
-          {posts.map((post, index) => (
-            <div key={index}>
-              <h2>{post.data.title}</h2>
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            </div>
-          ))}
-        </div>
+        <PostList slugs={slugs} />
       </main>
     </div>
   );
