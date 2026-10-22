@@ -26,26 +26,6 @@ export default function Hero() {
                     } />
             </div>
             <div id="hero-grid" className="flex-1/4 h-full grid grid-cols-3 gap-4 bg-rosy-copper-500 border-l border-onyx-900 p-12 overflow-hidden">
-                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
-                </div>
-                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
-                </div>
-                <div className="bg-parchment-100 rounded-lg border col-span-2 border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
-                </div>
-                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
-                </div>
-                <div className="bg-parchment-100 rounded-lg border border-onyx-900 shadow-[3px_3px_0_var(--color-onyx-900)]">
-                </div>
-                <div className="flex flex-col align-middle justify-center">
-                </div>
-                <div className="flex flex-col align-middle justify-center origin-right scale-[2]">
-                    <h2 className="text-5xl font-medium font-fredoka text-banana-cream-500 origin-center">
-                        wunderbox.
-                    </h2>
-                    <h2 className="text-5xl font-medium font-fredoka text-banana-cream-500 origin-center">
-                        games.
-                    </h2>
-                </div>
             </div>
             {/* <a href="#featured-project" className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-rosy-copper-500">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 16 16">
