@@ -1,7 +1,7 @@
-import MainNav from "../_components/navigation/MainNav";
-import { getPostSlugs, getPostBySlug } from "../../lib/BlogTools";
+import MainNav from "@/app/_components/navigation/MainNav";
+import { getPostSlugs, getPostBySlug } from "@/lib/BlogTools";
 
-function PostList({ slugs }: { slugs: string[] | NonSharedBuffer[] }) {
+function PostList({ slugs }: { slugs: string[] }) {
   return (
     <ul>
       {slugs.map((slug) => (

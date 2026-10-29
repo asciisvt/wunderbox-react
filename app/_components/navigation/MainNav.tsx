@@ -49,7 +49,10 @@ export default function MainNav() {
   }, []);
 
   return (
-    <nav ref={root} className="bg-onyx-900 sticky top-0 z-50 flex h-15">
+    <nav
+      ref={root}
+      className="bg-onyx-900 border-parchment-100 sticky top-0 z-50 flex h-16"
+    >
       <a href="/">
         <WunderLogo className="text-parchment-100 h-full w-auto px-8 py-3" />
       </a>

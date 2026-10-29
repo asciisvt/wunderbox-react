@@ -3,6 +3,7 @@
 @theme inline {
   --font-fredoka: var(--font-fredoka);
   --font-nunito: var(--font-nunito);
+  --font-oswald: var(--font-oswald);
 
   --color-parchment-50: #f4f1f1;
   --color-parchment-100: #e8e3e3;
@@ -97,15 +98,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .grain-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+body {
+  position: relative;
+}
+
+.grain-overlay {
+  position: absolute;
   height: 100%;
-  background: url("/grain.gif") repeat;
-  opacity: 0.06;
-  mix-blend-mode: overlay;
+  inset: 0;
+  background: url("/grain-2.jpg") repeat;
+  opacity: 0.1;
+  mix-blend-mode: screen;
   pointer-events: none;
   z-index: 9999;
-} */
+}
