@@ -25,7 +25,7 @@ export default function LatestNews() {
           view all posts
         </a>
       </div>
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-6 gap-2">
         {slugs.map((slug) => (
           <NewsItem key={slug} slug={slug} />
         ))}
@@ -39,21 +39,21 @@ function NewsItem({ slug }: { slug: string }) {
   return (
     <a
       href={`/blog/${slug}`}
-      className="border-parchment-100 flex flex-col rounded-xl border-2 p-4"
+      className="bg-onyx-800 flex flex-col rounded-xl p-4"
     >
-      <div className="flex flex-1 flex-row justify-between gap-4">
+      <div className="flex flex-row justify-between gap-4">
         <p className="font-bold">{data.category}</p>
         <p className="text-rosy-copper-500">/</p>
         <p className="text-parchment-100 italic">{data.date}</p>
       </div>
-      <div className="my-4 flex-5 overflow-hidden">
+      <div className="aspect-video overflow-hidden">
         <img
           src={data.image}
           alt={data.title}
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="flex flex-1 flex-col gap-2">
+      <div className="mt-4 flex flex-col gap-2">
         <h3 className="text-xl font-bold">{data.title}</h3>
         <p className="text-parchment-100">{data.description}</p>
       </div>

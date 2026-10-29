@@ -4,7 +4,7 @@ export default function Featured() {
   return (
     <div
       id="featured"
-      className="font-nunito bg-onyx-900 border-parchment-100 h-min-[58dvh] relative mx-8 mb-8 overflow-clip rounded-xl border-2 px-8 py-12"
+      className="font-nunito bg-onyx-800 h-min-[58dvh] relative mx-8 mb-8 overflow-clip rounded-xl px-8 py-12"
     >
       <h1 className="text-rosy-copper-500 bg-parchment-100 absolute top-0 left-0 flex w-fit items-center rounded-br-xl px-5 py-3 text-2xl font-bold">
         <Icon icon="charm:north-star" className="mr-2 inline-block"></Icon>
