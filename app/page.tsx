@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <div>
       <MainNav />
-      <Hero />
-      <Featured />
-      <LatestNews />
+      <main>
+        <Hero />
+        <Featured />
+        <LatestNews />
+      </main>
     </div>
   );
 }

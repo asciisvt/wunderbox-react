@@ -5,14 +5,14 @@ import MarkdownIt from "markdown-it";
 
 const md = new MarkdownIt();
 const postsDirectory = path.join(process.cwd(), "app", "blog", "_posts");
+const slugs = () => {
+  return fs.readdirSync(postsDirectory, {
+    withFileTypes: false,
+  }).map((slug) => slug.toString().replace(".md", ""));
+};
 
 export function getPostSlugs(): string[] {
-  const slugs = fs.readdirSync(postsDirectory, {
-    withFileTypes: false,
-  });
-
-  let parsedSlugs = slugs.map((slug) => slug.toString().replace(".md", ""));
-  return parsedSlugs;
+  return slugs();
 }
 
 export function getPostBySlug(slug: string) {
@@ -33,4 +33,11 @@ export function getPostBySlug(slug: string) {
     data,
     content: htmlContent,
   };
+}
+
+export function getPostContentBySlug(slug: string) {
+  const fullPath = path.join(postsDirectory, slug + ".md");
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { content } = matter(fileContents);
+  return md.render(content);
 }
