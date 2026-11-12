@@ -20,14 +20,14 @@ export default function Hero() {
         <div className="mt-8 flex flex-row gap-4">
           <a
             href="#featured"
-            className="bg-rosy-copper-500 text-parchment-100 flex items-center rounded-full px-6 py-4 text-2xl font-bold"
+            className="bg-rosy-copper-500 text-parchment-100 flex items-center px-6 text-2xl font-bold"
           >
             <Icon icon="charm:north-star" className="mr-2 inline-block"></Icon>
             featured project
           </a>
           <a
             href="/software"
-            className="flex items-center rounded-full px-6 py-4 text-xl font-medium"
+            className="flex items-center px-6 py-4 text-xl font-medium"
           >
             <Icon
               icon="eos-icons:application-window"
