@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from "react";
 import WunderLogo from "../WunderLogo";
 import NavItem from "./NavItem";
 import { Icon } from "@iconify-icon/react";
-import { animate, createScope } from "animejs";
 
 const navItems = [
   {
@@ -30,33 +29,15 @@ const navItems = [
 
 export default function MainNav() {
   const [activeItem, setActiveItem] = useState<string | null>(null);
-  const root = useRef<HTMLDivElement | null>(null);
-  const scope = useRef<ReturnType<typeof createScope> | null>(null);
-
-  useEffect(() => {
-    scope.current = createScope({ root }).add((self) => {
-      // animate(".nav-item", {
-      //   translateY: -10,
-      //   duration: 300,
-      //   easing: "outQuad",
-      // });
-    });
-
-    // destroy the animation scope on unmount
-    return () => {
-      scope.current?.revert();
-    };
-  }, []);
 
   return (
     <nav
-      ref={root}
       className="bg-onyx-900 border-parchment-100 sticky top-0 z-50 flex h-16"
     >
       <a href="/">
         <WunderLogo className="text-parchment-100 h-full w-auto px-8 py-3" />
       </a>
-      <div className="bg-parchment-100 text-onyx-900 font-fredoka flex flex-1 flex-row rounded-l-full pl-4 font-medium">
+      <div className="bg-parchment-100 text-onyx-900 font-fredoka flex flex-1 flex-row  pl-4 font-medium">
         <ul className="flex h-full flex-2 flex-row items-center">
           {navItems.map((item) => (
             <li

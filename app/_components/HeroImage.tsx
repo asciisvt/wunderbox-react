@@ -1,12 +1,7 @@
 "use client";
 import { useRef } from "react";
-import { createScope } from "animejs";
 
 export default function HeroImage({ className }: { className?: string }) {
-  const scope = useRef<ReturnType<typeof createScope> | null>(null);
-  const root = useRef<HTMLDivElement | null>(null);
-
-  scope.current = createScope({ root });
 
   return (
     <div className={className}>
