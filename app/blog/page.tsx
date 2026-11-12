@@ -20,7 +20,7 @@ export default function Blog() {
                   the blog<span className="text-onyx-900">.</span>
                 </h1>
               </div>
-              <p className="border-rosy-copper-500 max-w-xs border-l-4 pl-4 text-base leading-relaxed font-bold md:mb-2">
+              <p className="border-onyx-900 max-w-xs border-l-4 pl-4 text-base leading-relaxed font-bold md:mb-2">
                 Behind the scenes for our projects and updates at
                 <span className="bg-rosy-copper-500 text-parchment-100 mx-1 px-0.5">
                   <a href="/">wunderbox.games</a>

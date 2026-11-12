@@ -63,7 +63,7 @@ export default function PostList({ slugs }: { slugs: string[] }) {
           <article className="md:pl-12 lg:pl-16">
             <Link
               href={`/blog/${slug}`}
-              className="group border-onyx-900 bg-parchment-100 text-onyx-900 focus-visible:outline-banana-cream-400 block border-4 shadow-[8px_8px_0_var(--color-rosy-copper-500)] transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-8"
+              className="group border-onyx-900 bg-parchment-100 text-onyx-900 focus-visible:outline-banana-cream-400 block border-4 shadow-[10px_14px_0_var(--color-rosy-copper-500)] transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-8"
             >
               <div className="border-onyx-900 bg-parchment-200 relative aspect-[2/1] border-b-4">
                 <div className="absolute inset-0 overflow-hidden bg-black/10">
