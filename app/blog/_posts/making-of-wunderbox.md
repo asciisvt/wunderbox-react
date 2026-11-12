@@ -1,7 +1,7 @@
 ---
 title: "Making of wunderbox.games"
 description: "A brief overview of the creation of this website"
-date: "2024-06-10"
+date: "2026-11-10"
 author: "asciisvt"
 category: "Dev Log"
 featured: false
